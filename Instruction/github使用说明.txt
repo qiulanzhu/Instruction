@@ -1,4 +1,7 @@
-上传文档
-1.在文档的目录下，右击选择Git Init Here!
-2.Git Commit
-3.push(仓库地址：https://github.com/qiulanzhu/Instruction.git)
+上传文档步骤
+初始化本地仓库：Git Init Here!
+仓库地址：https://github.com/qiulanzhu/Instruction.git)
+
+svn（64位）客户端更新和上传
+update
+Commit
