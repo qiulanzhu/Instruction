@@ -26,6 +26,7 @@ ssh -T git@github.com
 Title 可以随便命名，Key 的内容拷贝自 ~/.ssh/id_rsa.pub 中的内容，完成后，可以再使用 ssh -v git@github.com 进行测试。看到下面的信息表示验证成功。
 
 6.提交代码至GitHub
+git remote rm origin
 git remote add origin git@github.com:qiulanzhu/Instruction.git
 git push -u origin master
 
