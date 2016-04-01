@@ -1,0 +1,54 @@
+1.安装NodeJs
+apt-get install nodejs
+
+2.安装包管理器npm
+sudo apt-get install npm
+
+3.deb文件的安装和卸载
+dpkg -i <package.deb>
+dpkg -r <package.deb>
+
+4.创建快捷方式
+sudo ln -s /opt/sublime_text/sublime_text /usr/bin/sublime
+
+5.安装任务栏
+sudo apt-get install tint2
+tint2
+
+6.亮度调节：
+1、终端执行命令：sudo vim  /etc/default/grub
+在打开文件中找到
+GRUB_CMDLINE_LINUX=""
+改成
+GRUB_CMDLINE_LINUX="acpi_backlight=vendor“
+
+7.查询系统信息
+sudo uname --m 查看ubuntu是32位还是64位
+sudo uname --s 显示内核名字s
+sudo uname --r 显示内核版本
+sudo uname --n 显示网络主机名
+sudo uname --p 显示cpu 
+
+8.安装×.tar.bz2文件
+ tar jxvf fcitx-3.4.2.tar.bz2
+
+9.安装×.rpm
+rpm -ivh  rpm
+
+10.如该提示npm not ok
+npm config set registry http://registry.npmjs.org/  
+
+11.安装flash
+sudo apt-get install flashplugin-nonfree
+
+12.挂载权限
+/dev/sda7	/media/F	ntfs	  defaults,utf8,uid=1000,gid=1000,dmask=022,fmask=133	0	0 
+
+13.安装Google浏览器
+Chromium 浏览器是谷歌浏览器的开源版本，可以说谷歌浏览器就是基于 Chromium 。该浏览器已经升级到版本21，原来的 Chromium 每日创建版 ppa 升级到版本 18 就已经停止了更新。国外Tobias Wolf 创建了一个新的 ppa 为Ubuntu 12.04 Precise 提供最新发行版本。
+PPA地址：ppa:chromium-daily/ppa
+Ubuntu 12.04 用户安装或升级浏览器方法，打开终端输入以下命令：
+sudo add-apt-repository ppa:towolf/crack
+sudo apt-get update
+sudo apt-get install chromium-browser
+sudo apt-get upgrade
